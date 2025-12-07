@@ -3,20 +3,32 @@ body {
   margin: 0;
   padding: 0;
   font-family: system-ui, sans-serif;
-  background: linear-gradient(to bottom, #1f2b38, #243446);
   color: #000;
   text-align: center;
+
+  /* Gradient */
+  background: linear-gradient(
+    to bottom,
+    #1f2b38 0%,
+    #202c39 20%,
+    #253443 40%,
+    #273845 55%,
+    #243544 70%,
+    #1f2b38 100%
+  );
 }
 
-/* Rubriken */
+/* Rubrik */
 h1 {
   margin-top: 40px;
   color: #ffffff;
   font-size: 28px;
 }
 
-/* Card-ruta */
+/* Card */
 .card {
+  position: relative;
+  z-index: 1;
   background: #e9ecef;
   width: 60%;
   margin: 40px auto;
@@ -26,7 +38,7 @@ h1 {
   text-align: left;
 }
 
-/* Formelement – layout */
+/* layout */
 #controls {
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -64,4 +76,6 @@ input.checkbox {
   padding: 8px;
   border-radius: 4px;
   background: #ffffff;
+
+  transition: background-color 350ms ease, color 200ms ease;
 }

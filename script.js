@@ -25,7 +25,7 @@ function handleInputEvent(e) {
   console.log("Elementets name-attribut:", targetName);
 
   if (targetName === "content") {
-    // Uppdatera texten i div-elementet
+    // Uppdatera texten i div
     outputDiv.innerHTML = e.target.value;
   }
 }
